@@ -1,0 +1,33 @@
+.cool {
+    padding: 10px 30px 10px 30px;
+    display: block;
+    font-family: 'Nunito', sans-serif;
+    background: maroon;
+    color: white;
+    /* position: relative; */
+}
+
+.cool::before {
+    content: 'Before Content';
+    display: block;
+    /* display: flex; */
+    justify-content: center;
+    align-content: center;
+    background: blueviolet;
+    padding:10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.cool::after {
+    content: 'After Content';
+    background: blueviolet;
+    display: block; 
+    padding:10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.cool:hover::before {
+    color: red;
+}
